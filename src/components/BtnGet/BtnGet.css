@@ -1,0 +1,24 @@
+.btnGet {
+  padding: 15px 25px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  color: var(--font-color);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 2px var(--shadow);
+  transition: 0.3s;
+  translate: 0 -5px;
+}
+
+.btnGet:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+  .btnGet {
+    padding: 12px 17px;
+    font-size: 1.2rem;
+  }
+}
