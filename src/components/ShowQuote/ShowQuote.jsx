@@ -12,7 +12,12 @@ const ShowQuote = () => {
   const [Quote, setQuote] = useState("");
   const [QuoteFr, setQuoteFr] = useState("");
 
+  const song = "./assets/song.mp3";
+  const audio = new Audio(song);
+
   const getRamdomQuote = () => {
+    audio.pause();
+    audio.play();
     axios
       .get(`${uri}${randomQuote}`)
       .then((response) => console.log(response.data) || setQuote(response.data))
@@ -30,6 +35,8 @@ const ShowQuote = () => {
       .catch((error) => {
         console.log(error);
       });
+
+    setTimeout(() => audio.pause(), 3000);
   };
 
   const dateConv = (date) => {
