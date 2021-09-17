@@ -1,17 +1,11 @@
-import { Route, Switch } from 'react-router-dom';
+import Home from "./screens/Home.jsx";
 
-import Header from './components/Header';
-import BtnGet from './components/BtnGet';
-import ShowQuote from './components/ShowQuote';
-
-import './App.css';
+import "./App.css";
 
 function App() {
-
   return (
     <div className="App">
-      <Header />
-      <ShowQuote />
+      <Home />
     </div>
   );
 }

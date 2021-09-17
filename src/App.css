@@ -1,0 +1,15 @@
+:root {
+  --background-color: rgb(60, 76, 122);
+  --button-color: rgb(220, 70, 70);
+  --shadow: rgb(53, 67, 109);
+  --font-color: rgb(230, 230, 230);
+}
+
+.App {
+  background-color: rgb(110, 110, 110);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
