@@ -8,8 +8,9 @@
 }
 
 .showQuoteWrapText {
+  margin-top: -10px;
   width: 100%;
-  min-height: 50%;
+  min-height: 70%;
   background-color: var(--font-color);
   text-align: center;
   display: flex;
