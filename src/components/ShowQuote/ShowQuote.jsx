@@ -21,17 +21,17 @@ const ShowQuote = () => {
     axios
       .get(`${uri}${randomQuote}`)
       .then((response) => console.log(response.data) || setQuote(response.data))
-      .then(
-        axios
-          .post(uriTranslate, {
-            email: "axel.gourlin09@gmail.com",
-            password: "Jg47Jr4!zFM$yB6coGr!",
-            text: Quote.value,
-            src: "en",
-            dest: "fr",
-          })
-          .then((response) => console.log(response) || setQuoteFr(response))
-      )
+      // .then(
+      //   axios
+      //     .post(uriTranslate, {
+      //       email: "",
+      //       password: "",
+      //       text: Quote.value,
+      //       src: "en",
+      //       dest: "fr",
+      //     })
+      //     .then((response) => console.log(response) || setQuoteFr(response))
+      // )
       .catch((error) => {
         console.log(error);
       });
